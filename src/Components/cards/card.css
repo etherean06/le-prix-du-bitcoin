@@ -1,0 +1,44 @@
+
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .flex-card {
+     flex-direction: column;
+     display: flex;
+     justify-content: center;
+     
+    }
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+        padding: 10px;
+        text-align: center;
+        color: white;
+        background: #201D3E;
+        width: 90%;
+        height: 140px;
+        margin-bottom: 20px;
+        justify-content: center;
+        margin: 10px auto 10px auto;
+    }
+  }
+
+  @media screen and (min-width: 600px) {
+    /* Style the counter cards */
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+        padding: 2px;
+        text-align: center;
+        color: white;
+        background: #201D3E;
+        height: 155px;
+        width: 270px;
+        margin-bottom: 20px;
+      }
+    
+      .flex-card {
+          display: flex;
+          justify-content: space-evenly;
+          
+      }
+  }
+  
