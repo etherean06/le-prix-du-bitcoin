@@ -15,7 +15,7 @@
         color: white;
         background: #201D3E;
         width: 90%;
-        height: 170px;
+        height: 140px;
         margin-bottom: 20px;
         justify-content: center;
         margin: 10px auto 10px auto;
@@ -23,7 +23,6 @@
   }
 
   @media screen and (min-width: 600px) {
-    /* Style the counter cards */
     .card {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
         padding: 2px;

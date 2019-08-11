@@ -37,7 +37,6 @@ class Clock extends Component {
                
                 <p className="reward">Le 17 Mai 2020</p>
                 <p>{this.leading0(this.state.days)} Jours {this.leading0(this.state.hours)} Heures {this.leading0(this.state.minutes)} Min {this.leading0(this.state.seconds)} Secs</p>
-                <p className="reward">Recompense par block: <span className="blocks">12.5 a 6.25 btc</span></p>
             </div>
         );
     }
