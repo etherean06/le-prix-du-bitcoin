@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Card from "./cards/Card"
 import "./cards/card.css"
-import { monthName } from "../helper"
 import Count from "../Components/count/Count"
 
 
@@ -14,7 +13,6 @@ export default function Data() {
     const [marketData, setMaketData] = useState();
     const [supply, setSupply] = useState();
     const [dev, setDev] = useState();
-    const [commit, setCommit] = useState();
     const [loading, setLoading] = useState(true)
 
     useEffect(() => {
@@ -25,7 +23,6 @@ export default function Data() {
             setSupply(result.data.market_data.circulating_supply);
             setMaketData(result.data.market_data.ath.eur);
             setDev(result.data.developer_data.forks);
-            setCommit(result.data.developer_data.commit_count_4_weeks);
             setData(result.data);
         };
         fetchPrice();
@@ -33,13 +30,13 @@ export default function Data() {
     }, []);
 
 
-    console.log(data)
     return (
         loading ? (
             <div>Loading...</div>
         ) :
             <>
                 <h2>A Propos du Bitcoin</h2>
+               
                 <div className="flex-card">
                     <Card
                         name={"Le Prix du Bitcoin"}

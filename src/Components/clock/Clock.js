@@ -34,9 +34,7 @@ class Clock extends Component {
     render() {
         return (
             <div>
-               
-                <p className="reward">Le 17 Mai 2020</p>
-                <p>{this.leading0(this.state.days)} Jours {this.leading0(this.state.hours)} Heures {this.leading0(this.state.minutes)} Min {this.leading0(this.state.seconds)} Secs</p>
+            <p>{this.leading0(this.state.days)} Jours {this.leading0(this.state.hours)} Heures {this.leading0(this.state.minutes)} Min {this.leading0(this.state.seconds)} Secs</p>
             </div>
         );
     }
