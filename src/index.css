@@ -4,9 +4,8 @@
 body {
   margin: 0;
   background-color: #16132E;
-
+  height: 100%;
 }
-
 
 .propulsion {
   color: white
@@ -18,7 +17,6 @@ code {
 }
 
 .footer {
-  
     padding: 20px;
     position: fixed;
     left: 0;
