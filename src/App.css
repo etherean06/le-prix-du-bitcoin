@@ -27,13 +27,12 @@ p {
 }
 
 .App-logo {
-  width: 10%;
-  margin-bottom: 10px;
+  width: 20%;
 }
 
 @media screen and (max-width: 600px) {
   .App-logo {
-    width: 40%;
+    width: 60%;
   }
     }
 
