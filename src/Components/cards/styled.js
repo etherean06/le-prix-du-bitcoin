@@ -18,6 +18,7 @@ export const FlexCard = styled.div`
 `;
 
 export const Cards = styled.div`
+border-radius: 15px;
 @media screen and (max-width: 600px) {
 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
     padding: 10px;
