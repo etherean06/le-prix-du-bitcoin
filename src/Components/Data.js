@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Card from './cards/Card';
-import './cards/card.css';
+import { FlexCard } from './cards/styled';
+
 import Count from './count/Count';
 
 const url = 'https://api.coingecko.com/api/v3/coins/bitcoin';
@@ -33,16 +34,16 @@ export default function Data() {
     <>
       <h2>A Propos du Bitcoin</h2>
 
-      <div className="flex-card">
+      <FlexCard>
         <Card name="Le Prix du Bitcoin" desc={`${price} Euros`} />
         <Card name="Prochain Halving du Bitcoin" desc={<Count />} />
         <Card name="Le All Time High!" desc={`${marketData} Euros`} />
-      </div>
-      <div className="flex-card">
+      </FlexCard>
+      <FlexCard>
         <Card name="Classement au Market Cap" desc={`Le Bitcoin est #${data.market_cap_rank} `} />
         <Card name="Bitcoin en circulation" desc={`${supply} Millions`} />
         <Card name="Les Forks" desc={`il existe ${dev} Fork du Bitcoin `} />
-      </div>
+      </FlexCard>
     </>
   );
 }

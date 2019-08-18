@@ -11,7 +11,8 @@
     "react-moment-countdown": "^0.3.0",
     "react-moment-proptypes": "^1.6.0",
     "react-scripts": "3.0.1",
-    "react-spring": "^8.0.27"
+    "react-spring": "^8.0.27",
+    "styled-components": "^4.3.2"
   },
   "scripts": {
     "start": "react-scripts start",

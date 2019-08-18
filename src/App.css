@@ -33,3 +33,9 @@ p {
   margin-bottom: 10px;
 }
 
+@media screen and (max-width: 600px) {
+  .App-logo {
+    width: 40%;
+  }
+    }
+

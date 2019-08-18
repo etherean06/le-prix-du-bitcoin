@@ -17,8 +17,7 @@ code {
 }
 
 .footer {
-    padding: 20px;
-    position: fixed;
+    padding: 20px; 
     left: 0;
     bottom: 0;
     height: 120px;
@@ -33,9 +32,3 @@ code {
   color: #10B7E0;
 }
 
-@media screen and (max-width: 600px) {
-.footer {
-  display: none;
-}
- 
-  }
