@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const fontSize = '20px';
+const fontSize = '18px';
 
 export const Cards = styled.div`
 border-radius: 15px;
