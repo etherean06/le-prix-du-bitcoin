@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import Card from './cards/Card';
-import { FlexCard } from './cards/styled';
+import Loader from 'react-loader-spinner';
+import Card from '../cards/Card';
+import { FlexCard, Title, SubTitle } from './styled';
 
-import Count from './count/Count';
+import Count from '../count/Count';
 
 const url = 'https://api.coingecko.com/api/v3/coins/bitcoin';
 
@@ -29,11 +30,11 @@ export default function Data() {
   }, []);
 
   return loading ? (
-    <div>Loading...</div>
+    <Loader type="TailSpin" color="#10B7E0" height={80} width={80} />
   ) : (
     <>
-      <h2>A Propos du Bitcoin</h2>
-
+      <Title>Le Prix Du Bitcoin</Title>
+      <SubTitle>A Propos du Bitcoin</SubTitle>
       <FlexCard>
         <Card name="Le Prix du Bitcoin" desc={`${price} Euros`} />
         <Card name="Prochain Halving du Bitcoin" desc={<Count />} />

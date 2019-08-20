@@ -1,29 +1,10 @@
 
-
 .App {
   text-align: center;
 }
 
 * {
   box-sizing: border-box;
-}
-
-h1 {
-  color: #10B7E0;
-  margin-bottom: 80px;
-}
-
-h2 {
-  color: white;
-  
-}
-h3 {
-  color: #3EECAC;
-}
-
-p {
-  color: #10B7E0;
-  font-size: 16px;
 }
 
 .App-logo {

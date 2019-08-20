@@ -2,21 +2,6 @@ import styled from 'styled-components';
 
 const fontSize = '20px';
 
-export const FlexCard = styled.div`
-  @media screen and (min-width: 600px) {
-    display: flex;
-    justify-content: space-evenly;
-  }
-  ,
-  @media screen and (max-width: 600px) {
-    .flex-card {
-      flex-direction: column;
-      display: flex;
-      justify-content: center;
-    }
-  }
-`;
-
 export const Cards = styled.div`
 border-radius: 15px;
 @media screen and (max-width: 600px) {
@@ -38,7 +23,7 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
     text-align: center;
     color: white;
     background: #201D3E;
-    height: 155px;
+    height: 135px;
     width: 270px;
     margin-bottom: 20px;
   }
@@ -47,8 +32,10 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
 
 export const Name = styled.h3`
   font-size: ${fontSize};
+  color: #3eecac;
 `;
 
 export const Description = styled.p`
   font-size: ${fontSize};
+  color: #10b7e0;
 `;
