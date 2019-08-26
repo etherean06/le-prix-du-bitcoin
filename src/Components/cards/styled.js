@@ -19,7 +19,7 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
 
   @media screen and (min-width: 600px) {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
-    padding: 2px;
+    padding: 12px;
     text-align: center;
     color: white;
     background: #201D3E;
